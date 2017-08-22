@@ -1,11 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
+    <resourceExtensions />
+    <wildcardResourcePatterns>
+      <entry name="!?*.java" />
+      <entry name="!?*.form" />
+      <entry name="!?*.class" />
+      <entry name="!?*.groovy" />
+      <entry name="!?*.scala" />
+      <entry name="!?*.flex" />
+      <entry name="!?*.kt" />
+      <entry name="!?*.clj" />
+      <entry name="!?*.aj" />
+    </wildcardResourcePatterns>
     <annotationProcessing>
-      <profile name="Maven default annotation processors profile" enabled="true">
+      <profile default="true" name="Default" enabled="false">
+        <processorPath useClasspath="true" />
+      </profile>
+      <profile default="false" name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
         <module name="annotations" />
         <module name="annotations-solution" />
         <module name="aop" />
@@ -49,47 +65,47 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="annotations" target="1.8" />
-      <module name="annotations-solution" target="1.8" />
-      <module name="aop" target="1.8" />
-      <module name="aop-solution" target="1.8" />
-      <module name="javaconfig-dependency-injection" target="1.8" />
-      <module name="javaconfig-dependency-injection-solution" target="1.8" />
-      <module name="jdbc" target="1.8" />
-      <module name="jdbc-solution" target="1.8" />
-      <module name="jms" target="1.8" />
-      <module name="jms-solution" target="1.8" />
-      <module name="jmx" target="1.8" />
-      <module name="jmx-solution" target="1.8" />
-      <module name="jpa-spring-data" target="1.8" />
-      <module name="jpa-spring-data-solution" target="1.8" />
-      <module name="ms-accounts-server" target="1.8" />
-      <module name="ms-accounts-server-solution" target="1.8" />
-      <module name="ms-discovery-server" target="1.8" />
-      <module name="ms-discovery-server-solution" target="1.8" />
-      <module name="ms-web-client" target="1.8" />
-      <module name="ms-web-client-solution" target="1.8" />
-      <module name="mvc" target="1.8" />
-      <module name="mvc-solution" target="1.8" />
+      <module name="annotations" target="1.5" />
+      <module name="annotations-solution" target="1.5" />
+      <module name="aop" target="1.5" />
+      <module name="aop-solution" target="1.5" />
+      <module name="javaconfig-dependency-injection" target="1.5" />
+      <module name="javaconfig-dependency-injection-solution" target="1.5" />
+      <module name="jdbc" target="1.5" />
+      <module name="jdbc-solution" target="1.5" />
+      <module name="jms" target="1.5" />
+      <module name="jms-solution" target="1.5" />
+      <module name="jmx" target="1.5" />
+      <module name="jmx-solution" target="1.5" />
+      <module name="jpa-spring-data" target="1.5" />
+      <module name="jpa-spring-data-solution" target="1.5" />
+      <module name="ms-accounts-server" target="1.5" />
+      <module name="ms-accounts-server-solution" target="1.5" />
+      <module name="ms-discovery-server" target="1.5" />
+      <module name="ms-discovery-server-solution" target="1.5" />
+      <module name="ms-web-client" target="1.5" />
+      <module name="ms-web-client-solution" target="1.5" />
+      <module name="mvc" target="1.5" />
+      <module name="mvc-solution" target="1.5" />
       <module name="parentCoreSpringProject" target="1.8" />
-      <module name="rest-ws" target="1.8" />
-      <module name="rest-ws-solution" target="1.8" />
-      <module name="rewards-common" target="1.8" />
-      <module name="rewards-db" target="1.8" />
-      <module name="security" target="1.8" />
-      <module name="security-solution" target="1.8" />
-      <module name="spring-boot-solution" target="1.8" />
-      <module name="spring-boot-start" target="1.8" />
+      <module name="rest-ws" target="1.5" />
+      <module name="rest-ws-solution" target="1.5" />
+      <module name="rewards-common" target="1.5" />
+      <module name="rewards-db" target="1.5" />
+      <module name="security" target="1.5" />
+      <module name="security-solution" target="1.5" />
+      <module name="spring-boot-solution" target="1.5" />
+      <module name="spring-boot-start" target="1.5" />
       <module name="spring-intro" target="1.8" />
-      <module name="spring-intro-solution" target="1.8" />
-      <module name="test" target="1.8" />
-      <module name="test-solution" target="1.8" />
-      <module name="tx" target="1.8" />
-      <module name="tx-solution" target="1.8" />
-      <module name="xml-dependency-injection-best-practices" target="1.8" />
-      <module name="xml-dependency-injection-best-practices-solution" target="1.8" />
-      <module name="xml-di" target="1.8" />
-      <module name="xml-di-solution" target="1.8" />
+      <module name="spring-intro-solution" target="1.5" />
+      <module name="test" target="1.5" />
+      <module name="test-solution" target="1.5" />
+      <module name="tx" target="1.5" />
+      <module name="tx-solution" target="1.5" />
+      <module name="xml-dependency-injection-best-practices" target="1.5" />
+      <module name="xml-dependency-injection-best-practices-solution" target="1.5" />
+      <module name="xml-di" target="1.5" />
+      <module name="xml-di-solution" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

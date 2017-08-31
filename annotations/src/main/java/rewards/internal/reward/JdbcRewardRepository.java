@@ -8,6 +8,8 @@ import java.sql.SQLException;
 
 import javax.sql.DataSource;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
 import rewards.AccountContribution;
 import rewards.Dining;
 import rewards.RewardConfirmation;
@@ -19,12 +21,12 @@ import common.datetime.SimpleDate;
  * confirmation record.
  */
 
-/* TODO-04: Annotate the class with an appropriate stereotype annotation 
+/* Annotate the class with an appropriate stereotype annotation
  * to cause component-scan to detect and load this bean.
  * Configure Dependency Injection for dataSource.  
  * Decide if you should use field level or setter injection. 
  */
-
+@Repository
 public class JdbcRewardRepository implements RewardRepository {
 
 	private DataSource dataSource;
@@ -33,6 +35,7 @@ public class JdbcRewardRepository implements RewardRepository {
 	 * Sets the data source this repository will use to insert rewards.
 	 * @param dataSource the data source
 	 */
+	@Autowired
 	public void setDataSource(DataSource dataSource) {
 		this.dataSource = dataSource;
 	}

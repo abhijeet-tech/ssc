@@ -17,7 +17,7 @@ import config.RewardsConfig;
  * A system test that verifies the components of the RewardNetwork application work together to reward for dining
  * successfully. Uses Spring to bootstrap the application for use in a test environment.
  *
- * TODO-01: Run this test before making any changes.  It should pass.
+ *
  */
 public class RewardNetworkTests  {
 

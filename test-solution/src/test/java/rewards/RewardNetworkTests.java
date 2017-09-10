@@ -8,6 +8,7 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import common.money.MonetaryAmount;
@@ -17,12 +18,12 @@ import common.money.MonetaryAmount;
  * work together to reward for dining successfully. Uses Spring to bootstrap the
  * application for use in a test environment.
  */
-@RunWith(SpringRunner.class)
+@RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(classes=TestInfrastructureConfig.class)
 
 // Uncomment the profile you wish to use
-@ActiveProfiles("stub")
-//@ActiveProfiles({ "dev", "jdbc" })
+//@ActiveProfiles("stub")
+@ActiveProfiles({ "dev", "jdbc" })
 //@ActiveProfiles({ "production", "jdbc" })
 public class RewardNetworkTests {
 

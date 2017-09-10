@@ -25,6 +25,10 @@
             <groupId>com.jamonapi</groupId>
             <artifactId>jamon</artifactId>
         </dependency>
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjweaver</artifactId>
+        </dependency>
     </dependencies>
     <build>
         <plugins>
